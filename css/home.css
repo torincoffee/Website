@@ -292,12 +292,18 @@
     .connect-item {
         margin-bottom: 4rem;
     }
+
+
 }
 
 /* Extra small devices (phones, 414px and down) */
 @media only screen and (max-width: 414px) {
     .showcase-box {
         height: 18vh;
+    }
+
+    .photo-banner {
+        height: 34vh;
     }
 }
 

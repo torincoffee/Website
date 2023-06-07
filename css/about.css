@@ -331,4 +331,9 @@ a {
     .about2-box {
         flex-direction: column-reverse;
     }
+
+    .about3-box {
+        flex-direction: column-reverse;
+    }
 }
+
