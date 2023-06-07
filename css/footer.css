@@ -1,0 +1,120 @@
+/* Connect */
+.connect {
+    padding: 8rem 4rem;
+    /* background-color: var(--color-light-grey); */
+}
+
+.connect h4 {
+    color: var(--color-black);
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 3rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.connect h2 {
+    color: var(--color-black);
+    font-size: 5rem;
+    font-weight: 800;
+    line-height: 1.1;
+    text-transform: uppercase;
+    margin-bottom: 6rem;
+    text-align: center;
+}
+
+.connect-box {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-bottom: 2rem;
+}
+
+.connect-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: .3s ease-in-out all;
+    animation: connectBounce 3s ease-in-out infinite;
+}
+
+.connect-item:hover {
+    opacity: .7;
+}
+
+.connect-box a {
+    text-decoration: none;
+    transition: .5s ease-in-out all;
+    animation: connectBounce 3s ease-in-out infinite;
+}
+
+.connect-item i {
+    font-size: 8rem;
+    text-decoration: none;
+    color: var(--color-orange);
+    margin-bottom: 1rem;
+}
+
+.connect-item a {
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--color-black);
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+@keyframes connectBounce {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.03);
+    }
+}
+
+/* Footer */
+.footer {
+    /* background-color: var(--color-black); */
+    padding: 2rem 2rem;
+}
+
+.footer-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-name {
+
+}
+
+.footer-name h3 {
+    color: var(--color-black);
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.footer-linkbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-link {
+    margin: 0 2rem;
+}
+
+.footer-link a {
+    text-decoration: none;
+    color: var(--color-black);
+    font-size: 1.4rem;
+    font-weight: 600;
+    transition: .3s ease-in-out all;
+}
+
+.footer-link a:hover {
+    color: var(--color-orange);
+}

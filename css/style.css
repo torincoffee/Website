@@ -1,0 +1,57 @@
+/* Global */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+}
+
+body {
+    font-family: futura-pt, sans-serif;
+    background-color: var(--color-creme);
+    /* cursor: url(‘path-to-image.png’), auto; */
+    cursor: url(img/torin-test.png), auto;
+
+}
+
+.container {
+    max-width: 140rem;
+    margin: 0 auto;
+    padding: 0 0rem;
+    overflow: hidden;
+}
+
+.underline-black {
+    display: block;
+    height: 1.5px;
+    width: 7rem;
+    background-color: var(--color-black);
+}
+
+.underline-white {
+    display: block;
+    height: 1.5px;
+    width: 7rem;
+    background-color: var(--color-white);
+}
+
+.underline-orange {
+    display: block;
+    height: 1.5px;
+    width: 7rem;
+    background-color: var(--color-orange);
+}
+
+/* Root Variables */
+:root {
+    --bar-height: 75px;
+    --color-white: #fff;
+    --color-black: #1a1e24;
+    --color-grey: #9d9d9d;
+    --color-light-grey: #f9f9f9;
+    --color-orange: #ffa514;
+    /* --color-creme: #fff1d7; */
+}

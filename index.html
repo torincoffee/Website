@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Torin Coffee</title>
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/buttons.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/illustrations.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/case.css">
+    <!-- Javascript -->
+    <script defer src="https://kit.fontawesome.com/9e9c4f56c0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <script src="js/script.js" defer></script>
+    <!-- Adobe Fonts -->
+    <link rel="stylesheet" href="https://use.typekit.net/efo5lkn.css">
+    <!-- Remixicon -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css" rel="stylesheet">
+    <!-- Boxicons -->
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+
+    <!-- Bar -->
+    <div class="bar">
+        <div class="bar__content u-centered">
+            <a href="index.html"><img class="bar__logo" src="img/logo.png" alt="logo image"></a>
+            <input type="checkbox" id="inpNavToggle">
+            <label class="bar__nav-toggle" for="inpNavToggle">
+                <i class="ri-menu-line"></i>
+            </label>
+            <nav class="nav">
+                <a class="nav__link" href="index.html" style="color: #ffa514;">Work</a>
+                <a class="nav__link" href="illustrations.html">Illustrations</a>
+                <a class="nav__link" href="about.html">About</a>
+                <!-- <a class="button-black slide-right-black" href="#connect">Contact</a> -->
+            </nav>
+        </div>
+    </div>
+
+    <!-- Header Section -->
+    <!-- <header class="header" id="header">
+    </header> -->
+
+    <script>
+            document.addEventListener("DOMContentLoaded", () => {
+        const observer = new IntersectionObserver(entries => {
+            document.querySelector(".bar").classList.toggle("bar--bg", entries[0].intersectionRatio < 1)
+        }, {
+            threshold: 1
+        });
+        
+        observer.observe(document.querySelector(".header"));
+    });
+    </script>
+
+    <!-- Hero -->
+    <section class="hero">
+        <img src="img/torin-hero.gif" alt="">
+    </section>
+
+    <!-- Hero Mobile -->
+    <!-- <section class="hero-mobile">
+        <img src="img/torin-hero.gif" alt="">
+    </section> -->
+
+    <!-- Showcase Container -->
+    <section class="showcase-container">
+            <!-- Showcase -->
+            <section class="showcase" id="showcase">
+                <div class="showcase-box">
+                    <img src="img/thumbnails-2/torin-coffee-design-fire-thumbnail.png" alt="">
+                    <div class="showcase-textbox">
+                        <h4>Branding</h4>
+                        <h2>Fire on the mountain</h2>
+                        <div class="showcase-button">
+                            <a href="fire.html" class="button-white slide-right-white">See More</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        
+            <!-- Showcase -->
+            <section class="showcase" id="showcase">
+                <div class="showcase-box">
+                    <img src="img/thumbnails-2/torin-coffee-design-stitches-thumbnail.png" alt="">
+                    <div class="showcase-textbox">
+                        <h4>Branding</h4>
+                        <h2>Stitches</h2>
+                        <div class="showcase-button">
+                            <a href="stitches.html" class="button-white slide-right-white">See More</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        
+            <!-- Showcase -->
+            <section class="showcase" id="showcase">
+                <div class="showcase-box">
+                    <img src="img/thumbnails-2/torin-coffee-design-jitw-thumbnail.png" alt="">
+                    <div class="showcase-textbox">
+                        <h4>Branding</h4>
+                        <h2>Journey ITW</h2>
+                        <div class="showcase-button">
+                            <a href="journey.html" class="button-white slide-right-white">See More</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Showcase -->
+            <section class="showcase" id="showcase">
+                <div class="showcase-box">
+                    <img src="img/thumbnails-2/torin-coffee-design-polar-thumbnail.png" alt="">
+                    <div class="showcase-textbox">
+                        <h4>Branding</h4>
+                        <h2>Polar Seltzer</h2>
+                        <div class="showcase-button">
+                            <a href="polar.html" class="button-white slide-right-white">See More</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Showcase -->
+            <section class="showcase" id="showcase">
+                <div class="showcase-box">
+                    <img src="img/thumbnails-2/torin-coffee-design-untd-thumbnail.png" alt="">
+                    <div class="showcase-textbox">
+                        <h4>Branding</h4>
+                        <h2>UNTD</h2>
+                        <div class="showcase-button">
+                            <a href="untd.html" class="button-white slide-right-white">See More</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Showcase -->
+            <section class="showcase" id="showcase">
+                <div class="showcase-box">
+                    <img src="img/thumbnails-2/torin-coffee-design-cmt-thumbnail.png" alt="">
+                    <div class="showcase-textbox">
+                        <h4>Branding</h4>
+                        <h2>City Metal Traders</h2>
+                        <div class="showcase-button">
+                            <a href="cmt.html" class="button-white slide-right-white">See More</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    </section>
+
+    <!-- About -->
+    <section class="about">
+        <div class="container">
+            <div class="about-box">
+
+                <div class="about-textbox">
+                    <h2>I'm Torin</h2>
+                    <p>I'm Torin Coffee, a proud Pacific Northwest native who finds inspiration in music, nature, culinary arts, and storytelling. Whether it's through <span>words, visuals, or music,</span> I'm passionate about crafting narratives that capture hearts and minds.</p>
+
+                    <div class="about-item">
+                        <div class="about-icon">
+                            <i class="ri-lightbulb-flash-fill"></i>
+                        </div>
+                        <div class="about-item-text">
+                            <p>Words</p>
+                        </div>
+                    </div>
+
+                    <div class="about-item">
+                        <div class="about-icon">
+                            <i class="ri-image-2-fill"></i>
+                        </div>
+                        <div class="about-item-text">
+                            <p>Visuals</p>
+                        </div>
+                    </div>
+
+                    <div class="about-item">
+                        <div class="about-icon">
+                            <i class="ri-file-music-fill"></i>
+                        </div>
+                        <div class="about-item-text">
+                            <p>Music</p>
+                        </div>
+                    </div>
+
+                    <div class="about-button">
+                        <a href="illustrations.html" class="button-black slide-right-black">See My Work</a>
+                    </div>
+                </div>
+
+                <div class="about-image">
+                    <img src="img/headshot.jpg" alt="">
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Banner -->
+    <section class="banner">
+        <div class="container">
+            <div class="banner-box">
+                <h1>Take A Look At Illustrations</h1>
+                <h3>Sometimes I doodle when I'm bored ...</h3>
+                <!-- Photo Banner -->
+                <div class="photo-banner">
+                    <div class="photobanner">
+                        <!-- repeat 6 images twice -->
+                        <img src="img/drawings/22.jpg" alt="">
+                        <img src="img/drawings/16.jpg" alt="">
+                        <img src="img/drawings/7.jpg" alt="">
+                        <img src="img/drawings/17.jpg" alt="">
+                        <img src="img/drawings/26.jpg" alt="">
+                        <img src="img/drawings/29.jpg" alt="">
+                        <!-- repeat same 6 images above -->
+                        <img src="img/drawings/22.jpg" alt="">
+                        <img src="img/drawings/16.jpg" alt="">
+                        <img src="img/drawings/7.jpg" alt="">
+                        <img src="img/drawings/17.jpg" alt="">
+                        <img src="img/drawings/26.jpg" alt="">
+                        <img src="img/drawings/29.jpg" alt="">
+                    </div>
+                </div>
+                <div class="banner-button">
+                    <a href="illustrations.html" class="button-white slide-right-white">All Illustrations</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Connect -->
+    <section class="connect">
+        <div class="container">
+            <h4>All My Socials</h4>
+            <h2>Connect With Me</h2>
+            <div class="connect-box">
+
+                <div class="connect-item">
+                    <i class="ri-instagram-line"></i>
+                    <a href="https://www.instagram.com/torin_does_design/?igshid=YmMyMTA2M2Y%3D" target="_blank">@torin.coffee</a>
+                </div>
+
+                <div class="connect-item">
+                    <i class="ri-dribbble-line"></i>
+                    <a href="https://dribbble.com/Torin_Coffee" target="_blank">Torin Coffee</a>
+                </div>
+
+                <div class="connect-item">
+                    <i class="ri-linkedin-fill"></i>
+                    <a href="https://www.linkedin.com/in/torin-coffee-469959165"  target="_blank">Torin Coffee</a>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="footer-box">
+                <div class="footer-name">
+                    <h3>Torin Coffee</h3>
+                </div>
+                <div class="footer-linkbox">
+                    <div class="footer-link">
+                        <a href="index.html">Work</a>
+                    </div>
+                    <div class="footer-link">
+                        <a href="illustrations.html">Illustrations</a>
+                    </div>
+                    <div class="footer-link">
+                        <a href="about.html">About</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Torin Coffee</title>
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/buttons.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/illustrations.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/case.css">
+    <!-- Javascript -->
+    <script defer src="https://kit.fontawesome.com/9e9c4f56c0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <script src="js/script.js" defer></script>
+    <!-- Adobe Fonts -->
+    <link rel="stylesheet" href="https://use.typekit.net/efo5lkn.css">
+    <!-- Remixicon -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css" rel="stylesheet">
+    <!-- Boxicons -->
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+
+    <!-- Bar -->
+    <div class="bar" style="background-color: white;">
+        <div class="bar__content u-centered">
+            <a href="index.html"><img class="bar__logo" src="img/logo.png" alt="logo image"></a>
+            <input type="checkbox" id="inpNavToggle">
+            <label class="bar__nav-toggle" for="inpNavToggle">
+                <i class="ri-menu-line"></i>
+            </label>
+            <nav class="nav">
+                <a class="nav__link" href="index.html">Work</a>
+                <a class="nav__link" href="illustrations.html">Illustrations</a>
+                <a class="nav__link" href="about.html" style="color: #ffa514;">About</a>
+                <!-- <a class="button-black slide-right-black" href="#connect">Contact</a> -->
+            </nav>
+        </div>
+    </div>
+
+    <!-- Header Section -->
+    <!-- <header class="header" id="header">
+    </header> -->
+
+    <script>
+            document.addEventListener("DOMContentLoaded", () => {
+        const observer = new IntersectionObserver(entries => {
+            document.querySelector(".bar").classList.toggle("bar--bg", entries[0].intersectionRatio < 1)
+        }, {
+            threshold: 1
+        });
+        
+        observer.observe(document.querySelector(".header"));
+    });
+    </script>
+
+    <!-- About -->
+    <section class="about">
+        <div class="container">
+            <div class="about-box">
+
+                <div class="about-textbox">
+                    <h2>I'm a creator</h2>
+                    <p>Let me introduce myself. My name is Torin Coffee I’m a PNW native with a passion for helping people create their vision and making dope designs. I'm a graphic designer, illustrator, photographer, and animator.</p>
+
+                    <p>I'm a self-proclaimed chef who loves to try out his recipes on his anyone hungry enough to eat them. You can catch me burning off the calories of my creations biking whenever I can and putting my cheesy poetry to music or sifting through my playlists for a song strong enough to carry me through the week.</p>
+
+                    <p>Like what you see? Let's connect.</p>
+
+                    <div class="about-item">
+                        <div class="about-icon">
+                            <i class="ri-article-fill"></i>
+                        </div>
+                        <div class="about-item-text">
+                            <a href="img/resume.pdf" target="_blank">Resume</a>
+                        </div>
+                    </div>
+
+                    <div class="about-item">
+                        <div class="about-icon">
+                            <i class="ri-spotify-fill"></i>
+                        </div>
+                        <div class="about-item-text">
+                            <a href="https://open.spotify.com/user/22z4jns2lonapwgxb2fhm3v6i?si=7424a40629154a6c" target="_blank">Spotify Profile</a>
+
+                        </div>
+                    </div>
+
+                    <div class="about-item">
+                        <div class="about-icon">
+                            <i class="ri-instagram-fill"></i>
+                        </div>
+                        <div class="about-item-text">
+                            <a href="https://www.instagram.com/torin_does_design/?igshid=YmMyMTA2M2Y%3D" target="_blank">@torin.coffee</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Image -->
+                <div class="about-image">
+                    <img src="img/headshot.jpg" alt="">
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- About 2 -->
+    <section class="about2">
+        <div class="container">
+            <div class="about2-box">
+
+                <div class="about2-image">
+                    <img src="img/brazilian-lemonade.jpg" alt="A picture of Brazilian Lemonade">
+                </div>
+
+                <div class="about2-textbox">
+                    <h2>Favorite Recent Recipe</h2>
+                    <p>Ingredients:</p>
+                    
+                    <ul class="no-bullets">
+                        <li>4-5 fresh limes, washed and quartered</li>
+                        <li>1 cup granulated sugar</li>
+                        <li>3 cups cold water</li>
+                        <li>½ cup sweetened condensed milk</li>
+                        <li>Ice</li>
+                    </ul>
+                    <br>
+                    <p>Instructions:
+                        
+                        Start by placing the quartered limes and sugar in a blender. Blend until the limes are completely crushed, and the mixture is juicy and fragrant.
+                        Add 3 cups of cold water and blend again for a few seconds.
+                        Pour the mixture through a fine mesh strainer, using a spatula to press out as much juice as possible.
+                        Discard any solids that are left in the strainer.
+                        Pour the sweetened lime juice into a pitcher.
+                        Stir in the sweetened condensed milk until it is well incorporated.
+                        Add ice to the pitcher and stir again.
+                        Serve the Brazilian Lemonade chilled in tall glasses, garnished with a slice of lime.
+                    </p>
+                    <p>
+                        Enjoy your delicious and refreshing Brazilian Lemonade!
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About 3 -->
+    <section class="about3">
+        <div class="container">
+            <div class="about3-box">
+
+                <!-- Image -->
+                <div class="about3-image">
+                    <img src="img/halfmarathon.JPG" alt="A picture of Brazilian Lemonade">
+                </div>
+
+                <!-- Text -->
+                <div class="about3-textbox">
+                    <h2>Half Marathon</h2>
+                    <p>In January of 2023 I started training for a half marathon. I’ve been wanting to get into running with the desire to run a full marathon before I turn 30. A half marathon seemed like a good start. After signing up I started training for my race in May. How did it go? It was a tough race over hard terrain. Ask me and I’ll probably tell you I’m still sore. I want to continue training and run another one next year.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- About 2 -->
+    <section class="about2">
+        <div class="container">
+            <div class="about2-box">
+
+                <!-- Image -->
+                <div class="about2-image">
+                    <img src="img/Instagram.jpg" alt="A picture of Brazilian Lemonade">
+                </div>
+
+                <!-- Text -->
+                <div class="about2-textbox">
+                    <h2>Instagram</h2>
+                    <p>Like what you see? You should check out my Instagram and stay in touch! I’m always working on projects and I love connecting with people about design.</p>
+                    <p>Here’s a link to my instagram <br> <a href="https://www.instagram.com/torin_does_design/?igshid=YmMyMTA2M2Y%3D" style="color: white;">https://www.instagram.com/torin_does_design/?igshid=YmMyMTA2M2Y%3D</a></p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="footer-box">
+                <div class="footer-name">
+                    <h3>Torin Coffee</h3>
+                </div>
+                <div class="footer-linkbox">
+                    <div class="footer-link">
+                        <a href="index.html">Work</a>
+                    </div>
+                    <div class="footer-link">
+                        <a href="illustrations.html">Illustrations</a>
+                    </div>
+                    <div class="footer-link">
+                        <a href="about.html">About</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
